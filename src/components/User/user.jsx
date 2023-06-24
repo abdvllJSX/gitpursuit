@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { React, useEffect, useRef } from 'react';
 import { gsap, TimelineLite, Power2 } from "gsap";
-import "./User.scss";
+import "./user.scss";
 export default function User({ data, darkmode }) {
     useEffect(() => {
       gsap.to(".image-overlay", {
