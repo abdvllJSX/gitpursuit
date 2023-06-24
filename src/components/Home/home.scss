@@ -1,0 +1,166 @@
+@import "../../syles/main";
+
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in;
+
+    .home-wrapper {
+        width: 100%;
+        display: grid;
+        place-content: center;
+
+        .marquees {
+            margin-top: 150px;
+            @include mobile {
+                margin-top: 50px;
+            }
+        }
+
+        .main-header {
+            text-transform: uppercase;
+            font-size: 4rem;
+
+            @include mobile {
+                font-size: 2.1rem;
+                font-weight: 600;
+            }
+
+        }
+
+        .Banner {
+            margin-bottom: 40px;
+            -webkit-text-stroke: 2px black;
+            color: transparent;
+        }
+
+        .darkmode-Banner {
+            @extend .Banner;
+            -webkit-text-stroke: 2px white;
+
+        }
+
+        .main {
+            display: flex;
+            column-gap: 50px;
+            justify-self: center;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+            }
+
+            .input-container {
+                display: flex;
+                padding: 0 10px;
+                align-items: center;
+                column-gap: 20px;
+                width: 500px;
+                height: 50px;
+                border-radius: 30px;
+                border: 1px solid black;
+
+                @include mobile {
+                    width: 350px;
+                }
+
+
+                input {
+                    border: none;
+                    width: 100%;
+                    transition: all .5s ease-in;
+                    font-size: 20px;
+                    background-color: transparent;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .dark-input-container {
+                @extend .input-container;
+                border: 1px solid white;
+
+                .dark-input {
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+
+            button {
+                width: 120px;
+                height: 50px;
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 1rem;
+
+            }
+        }
+
+        .error-message {
+            text-align: center;
+            color: red;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        .user {
+            margin-top: 50px;
+            display: flex;
+            column-gap: 30px;
+            width: 680px;
+            justify-content: flex-start;
+            justify-self: center;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 50px;
+                width: 250px;
+                justify-content: center;
+
+            }
+
+            .pre-user-image {
+                position: relative;
+                z-index: 2;
+                width: 200px;
+                height: 200px;
+
+                @include mobile {
+                    width: 250px;
+                    height: 250px;
+
+                }
+
+            }
+
+            .pre-image-overlay {
+                top: 0;
+                right: 0;
+                width: 100%;
+                z-index: 2;
+                height: 100%;
+                background-color: white;
+                position: absolute;
+
+            }
+
+            img {
+                height: 100%;
+            }
+
+
+            .home-info {
+                @include mobile {
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+}
