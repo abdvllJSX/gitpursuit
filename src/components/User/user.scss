@@ -2,9 +2,9 @@
 
 
 .user-container {
-    border: 1px solid red;
     height: 100vh;
     width: 100%;
+    padding-bottom: 20px;
 
     .back-icon {
         width: 90%;
@@ -34,7 +34,6 @@
                 height: 500px;
 
                 @include mobile {
-                    border: 1px solid red;
                     width: 300px;
                     height: 300px;
                 }
@@ -56,7 +55,7 @@
 
             .user-info {
                 width: 250px;
-                border: 1px solid red;
+
                 .user-name,
                 .stats {
                     opacity: 0;
