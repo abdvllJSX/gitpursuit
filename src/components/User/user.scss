@@ -24,7 +24,7 @@
             @include mobile {
                 flex-direction: column;
                 justify-content: center;
-                aluign-items: center;
+                align-items: center;
             }
 
             .user-image {
@@ -55,7 +55,6 @@
 
             .user-info {
                 width: 250px;
-
                 .user-name,
                 .stats {
                     opacity: 0;

@@ -34,7 +34,7 @@ export default function User({ data, darkmode }) {
                         </div>
                         <div className="user-info"style={darkmode ? {color: "white"} : {color: "black"}}>
                             <p className="user-name"><span>UserName: </span>{data.name}</p>
-                            <p className="stats"><span>Bio: </span>{data.bio} lorem40</p>
+                            <p className="stats"><span>Bio: </span>{data.bio} </p>
                             <p className="stats"><span>company: </span>{data.company}</p>
                             <p className="stats"><span>email: </span>{data.email}</p>
                             <p className="stats"><span>Twitter username: </span>{data.twitter_username}</p>
