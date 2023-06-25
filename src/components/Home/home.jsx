@@ -48,7 +48,7 @@ export default function Home({ data, handleChange, getUser, darkmode, handleDark
                         </div>
                     </div>
 
-                    {failed ? <h1 className="error-message" >username not found</h1>:
+                    {failed ? <h1 className="error-message" style={darkmode ? {color: "white"} : {color: ""}}>username not found</h1>:
                     <div className="user" style={data === "" ? { display: "none" } : { display: "flex" }}>
                         <div className="pre-user-image" >
                             <div className="pre-image-overlay" style={darkmode ? { backgroundColor: "black" } : { backgroundColor: "" }}></div>
